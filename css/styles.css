@@ -1,48 +1,69 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 60px auto;
+    width: 70%;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+nav ul, footer ul {
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
 }
 
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
+nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #fff;
+a {
     text-decoration: none;
+    color: #999;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 30px auto;
+        width: 95%;
+    }
+    
+    nav ul li, footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
